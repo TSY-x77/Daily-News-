@@ -1,0 +1,13 @@
+{
+  "name": "dawn-wire",
+  "version": "1.0.0",
+  "description": "매일 아침 8시 패션/뷰티/유통/AI/테크/아트 뉴스를 자동 요약하는 사이트",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "node generate.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0"
+  }
+}
