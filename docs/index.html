@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAWN WIRE — 2026년 7월 3일 금요일 브리핑</title>
+<meta name="description" content="패션, 뷰티, 유통, AI, 테크, 아트 — 새벽까지의 뉴스를 매일 아침 8시에 요약합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Noto+Serif+KR:wght@500;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root{
+    --paper:#FAF7F2;
+    --paper-dim:#F1ECE2;
+    --ink:#1A1A18;
+    --ink-soft:#5B5750;
+    --rule:#DCD5C7;
+    --signal:#C4293E;
+    --c-fashion:#B08B3D;
+    --c-beauty:#C97B84;
+    --c-retail:#4B6E58;
+    --c-ai:#3B5BA5;
+    --c-tech:#445263;
+    --c-art:#8B3A62;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Pretendard', -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px;}
+
+  /* Masthead */
+  .masthead{border-bottom:3px solid var(--ink);padding:28px 0 16px;}
+  .masthead-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
+  .wordmark{
+    font-family:'Noto Serif KR','Fraunces',serif;
+    font-weight:700;
+    font-size:clamp(28px,6vw,40px);
+    letter-spacing:-0.01em;
+    margin:0;
+    line-height:1;
+  }
+  .wordmark em{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-weight:500;
+    color:var(--signal);
+  }
+  .stamp{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.06em;
+    border:1.5px solid var(--ink);
+    color:var(--ink);
+    padding:6px 10px;
+    transform:rotate(-2deg);
+    white-space:nowrap;
+  }
+  .dateline{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.04em;
+    color:var(--ink-soft);
+    margin-top:10px;
+    text-transform:uppercase;
+  }
+  .tagline{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-top:6px;
+  }
+
+  /* Category nav */
+  .catnav{
+    display:flex;flex-wrap:wrap;gap:0;
+    border-bottom:1px solid var(--rule);
+  }
+  .catnav a{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    text-decoration:none;
+    padding:12px 14px;
+    color:var(--ink-soft);
+    border-right:1px solid var(--rule);
+  }
+  .catnav a:last-child{border-right:none;}
+  .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;position:relative;top:-1px;}
+
+  /* Section */
+  .section{padding:36px 0 8px;border-bottom:1px solid var(--rule);}
+  .section:last-of-type{border-bottom:none;}
+  .section-head{display:flex;align-items:baseline;gap:10px;margin-bottom:18px;}
+  .section-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+  .section-count{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+  }
+  .section-rule{flex:1;height:1px;background:var(--rule);}
+
+  .story{padding:16px 0;border-top:1px solid var(--rule);}
+  .story:first-child{border-top:none;padding-top:0;}
+  .story-head{display:flex;gap:12px;align-items:baseline;}
+  .story-index{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    flex-shrink:0;
+    padding-top:3px;
+  }
+  .story-title{
+    font-family:'Noto Serif KR',serif;
+    font-weight:700;
+    font-size:18px;
+    line-height:1.4;
+    margin:0;
+  }
+  .story-title a{text-decoration:none;}
+  .story-title a:hover{text-decoration:underline;text-decoration-color:var(--rule);}
+  .story-summary{
+    font-size:14.5px;
+    line-height:1.7;
+    color:var(--ink-soft);
+    margin:6px 0 0 26px;
+  }
+  .story-source{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    margin:6px 0 0 26px;
+    opacity:0.8;
+  }
+
+  footer{
+    padding:32px 0 60px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    text-align:center;
+    border-top:3px solid var(--ink);
+    margin-top:12px;
+  }
+  footer a{text-decoration:underline;}
+
+  @media (max-width:480px){
+    .stamp{transform:rotate(0deg);}
+    .story-summary,.story-source{margin-left:0;}
+    .story-head{flex-direction:column;gap:2px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <h1 class="wordmark">DAWN <em>WIRE</em></h1>
+      <div class="stamp">08:00 KST 발행</div>
+    </div>
+    <div class="dateline">SEOUL — 2026년 7월 3일 금요일 · 새벽까지 수집된 뉴스 요약</div>
+    <div class="tagline">패션 · 뷰티 · 유통 · AI · 테크 · 아트, 여섯 개의 관점으로 아침을 엽니다.</div>
+  </header>
+
+  <nav class="catnav">
+    <a href="#fashion"><span class="dot" style="background:var(--c-fashion)"></span>FASHION</a>
+    <a href="#beauty"><span class="dot" style="background:var(--c-beauty)"></span>BEAUTY</a>
+    <a href="#retail"><span class="dot" style="background:var(--c-retail)"></span>RETAIL</a>
+    <a href="#ai"><span class="dot" style="background:var(--c-ai)"></span>AI</a>
+    <a href="#tech"><span class="dot" style="background:var(--c-tech)"></span>TECH</a>
+    <a href="#art"><span class="dot" style="background:var(--c-art)"></span>ART</a>
+  </nav>
+
+  
+  <section class="section" id="fashion">
+    <div class="section-head">
+      <span class="dot" style="background:var(--c-fashion)"></span>
+      <span class="section-label">FASHION · 패션</span>
+      <span class="section-count">2건</span>
+      <span class="section-rule"></span>
+    </div>
+    
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">01</span>
+          <h3 class="story-title"><a href="http://www.apparelnews.co.kr/" target="_blank" rel="noopener">유럽 기록적 폭염, 패션 업계 공급망 뒤흔들어</a></h3>
+        </div>
+        <p class="story-summary">유럽 전역을 덮친 이례적 폭염으로 매장 운영과 물류, 신상품 출시 일정에 차질이 빚어지고 있다고 어패럴뉴스가 전했습니다. 여름 상품 수요가 예년보다 빨라지면서 업계는 대응책 마련에 분주합니다.</p>
+        <p class="story-source">어패럴뉴스</p>
+      </article>
+
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">02</span>
+          <h3 class="story-title"><a href="http://www.apparelnews.co.kr/" target="_blank" rel="noopener">미국 삭스글로벌, 파산 절차 벗어나 새 이름으로 재출발</a></h3>
+        </div>
+        <p class="story-summary">경영난을 겪던 미국 대형 백화점 그룹 삭스글로벌이 파산 보호 절차를 마무리하고 새로운 사명으로 사업을 재개했습니다. 럭셔리 유통 시장의 구조조정 흐름을 보여주는 사례로 꼽힙니다.</p>
+        <p class="story-source">어패럴뉴스</p>
+      </article>
+  </section>
+  <section class="section" id="beauty">
+    <div class="section-head">
+      <span class="dot" style="background:var(--c-beauty)"></span>
+      <span class="section-label">BEAUTY · 뷰티</span>
+      <span class="section-count">2건</span>
+      <span class="section-rule"></span>
+    </div>
+    
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">01</span>
+          <h3 class="story-title"><a href="https://www.newsis.com/view/NISX20260624_0003682155" target="_blank" rel="noopener">2026 코리아뷰티페스티벌 개막, K뷰티 관광 확산</a></h3>
+        </div>
+        <p class="story-summary">문화체육관광부와 한국관광공사가 서울 하이커 그라운드에서 K뷰티 체험과 수출 상담을 결합한 뷰티 페스티벌을 7월 19일까지 운영합니다. 800개 이상의 K뷰티 관광상품이 외국인 대상으로 예약 가능합니다.</p>
+        <p class="story-source">뉴시스</p>
+      </article>
+
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">02</span>
+          <h3 class="story-title"><a href="https://www.newsis.com/view/NISX20260624_0003682155" target="_blank" rel="noopener">K뷰티 수출 역대 최대, 세계 2위 화장품 수출국 등극</a></h3>
+        </div>
+        <p class="story-summary">식약처 집계 기준 국내 화장품 수출액이 약 15조원으로 역대 최대를 기록하며 한국이 프랑스에 이어 세계 2위 화장품 수출국으로 올라섰습니다. 올리브영 등 유통 채널의 해외 확장도 가속화되고 있습니다.</p>
+        <p class="story-source">뉴시스</p>
+      </article>
+  </section>
+  <section class="section" id="retail">
+    <div class="section-head">
+      <span class="dot" style="background:var(--c-retail)"></span>
+      <span class="section-label">RETAIL · 유통</span>
+      <span class="section-count">2건</span>
+      <span class="section-rule"></span>
+    </div>
+    
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">01</span>
+          <h3 class="story-title"><a href="https://www.mt.co.kr/living/2026/06/21/2026061815034379192" target="_blank" rel="noopener">홈플러스, 대형마트 37개 매장 영업 잠정 중단</a></h3>
+        </div>
+        <p class="story-summary">고객 이탈과 매출 감소로 어려움을 겪던 홈플러스가 104개 매장 중 기여도가 낮은 37개 매장의 영업을 중단하고 나머지 매장에 역량을 집중하기로 했습니다. 대형마트 업태 전체의 매출 점유율은 사상 최저 수준까지 떨어졌습니다.</p>
+        <p class="story-source">머니투데이</p>
+      </article>
+
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">02</span>
+          <h3 class="story-title"><a href="https://www.youthdaily.co.kr/news/article.html?no=221647" target="_blank" rel="noopener">롯데·신세계백화점, 여름 정기세일 돌입</a></h3>
+        </div>
+        <p class="story-summary">롯데백화점이 7월 12일까지 럭셔리·K패션 브랜드 400여 곳이 참여하는 여름 정기 세일을 진행하며, 신세계·현대백화점도 체험형 프로그램을 앞세워 여름철 고객 유치 경쟁에 나섰습니다.</p>
+        <p class="story-source">청년일보</p>
+      </article>
+  </section>
+  <section class="section" id="ai">
+    <div class="section-head">
+      <span class="dot" style="background:var(--c-ai)"></span>
+      <span class="section-label">AI · AI</span>
+      <span class="section-count">2건</span>
+      <span class="section-rule"></span>
+    </div>
+    
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">01</span>
+          <h3 class="story-title"><a href="https://www.newsis.com/view/NISX20260625_0003682549" target="_blank" rel="noopener">오픈AI, 첫 자체 AI칩 할라페뇨 공개</a></h3>
+        </div>
+        <p class="story-summary">오픈AI가 브로드컴과 공동 개발한 추론 특화 AI 칩 할라페뇨를 공개하며 엔비디아 의존도 낮추기에 나섰습니다. 설계부터 시제품 완성까지 9개월이 걸렸으며, 연내 자체 데이터센터에 배치될 예정입니다.</p>
+        <p class="story-source">뉴시스</p>
+      </article>
+
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">02</span>
+          <h3 class="story-title"><a href="https://www.newsis.com/view/NISX20260624_0003682155" target="_blank" rel="noopener">마이크론, AI 호황에 분기 매출 4배 급등</a></h3>
+        </div>
+        <p class="story-summary">메모리 반도체 기업 마이크론이 AI발 수요 급증에 힘입어 분기 매출이 크게 늘며 사상 최대 실적을 기록, 시장 전망치를 상회했습니다. HBM 등 AI向 메모리 수요가 실적을 견인했습니다.</p>
+        <p class="story-source">뉴시스</p>
+      </article>
+  </section>
+  <section class="section" id="tech">
+    <div class="section-head">
+      <span class="dot" style="background:var(--c-tech)"></span>
+      <span class="section-label">TECH · 테크</span>
+      <span class="section-count">2건</span>
+      <span class="section-rule"></span>
+    </div>
+    
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">01</span>
+          <h3 class="story-title"><a href="https://www.sptatimeskorea.com/post/%EC%A0%9C20260701-tm-01%ED%98%B8-2026%EB%85%84-7%EC%9B%94-1%EC%9D%BC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%A0%9C%EC%A1%B0-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%89%B4%EC%8A%A4-%EC%9A%94%EC%95%BD" target="_blank" rel="noopener">삼성전자, 반도체 노광 공정에 양자컴퓨터 기술 도입 추진</a></h3>
+        </div>
+        <p class="story-summary">삼성전자가 반도체 제조의 핵심인 노광 공정을 양자컴퓨터로 시뮬레이션하는 기술 개발에 착수했습니다. 2나노 이하 초미세 공정의 복잡한 광학 연산 정확도를 높이기 위한 시도로, 국내 연구기관과 공동 개발을 진행합니다.</p>
+        <p class="story-source">서울경제</p>
+      </article>
+
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">02</span>
+          <h3 class="story-title"><a href="https://www.mtnews.net/news/articleView.html?idxno=23530" target="_blank" rel="noopener">2026년 韓 반도체 수출, 1,880억 달러로 역대 최대 전망</a></h3>
+        </div>
+        <p class="story-summary">AI 시장 축이 학습에서 추론으로 옮겨가며 메모리 수요가 늘어난 영향으로 올해 반도체 수출이 전년 대비 11% 증가할 것으로 전망됩니다. 다만 메모리 가격 상승으로 스마트폰·PC 출하량은 오히려 줄어들 것으로 예상됩니다.</p>
+        <p class="story-source">기계신문</p>
+      </article>
+  </section>
+  <section class="section" id="art">
+    <div class="section-head">
+      <span class="dot" style="background:var(--c-art)"></span>
+      <span class="section-label">ART · 아트</span>
+      <span class="section-count">2건</span>
+      <span class="section-rule"></span>
+    </div>
+    
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">01</span>
+          <h3 class="story-title"><a href="https://ddoing.co.kr/ddoing_exhibition_schedule" target="_blank" rel="noopener">뱅크시 전시 'Still here', 더현대서울서 7월 22일 개막</a></h3>
+        </div>
+        <p class="story-summary">익명의 아티스트 뱅크시의 전시가 더현대서울 ALT.1에서 7월 22일부터 11월 3일까지 열립니다. 국내에서 뱅크시 작품을 대규모로 접할 수 있는 흔치 않은 기회로 주목받고 있습니다.</p>
+        <p class="story-source">서울전시 일정 안내</p>
+      </article>
+
+      <article class="story">
+        <div class="story-head">
+          <span class="story-index">02</span>
+          <h3 class="story-title"><a href="https://monthlyart.com/portfolio-item/2026%EB%85%84-%EA%B5%AD%EB%A6%BD%ED%98%84%EB%8C%80%EB%AF%B8%EC%88%A0%EA%B4%80-%EC%A3%BC%EC%9A%94-%EA%B3%84%ED%9A%8D-%EB%B0%8F-%EC%A0%84%EC%8B%9C-%EB%B0%9C%ED%91%9C/" target="_blank" rel="noopener">국립현대미술관, 2026년 서도호·데미안 허스트 대규모전 예고</a></h3>
+        </div>
+        <p class="story-summary">국립현대미술관이 올해 서도호, 이대원 등 한국 작가 회고전과 함께 국제 거장전을 이어갈 계획을 밝혔습니다. 소장 미술아카이브 52만 점의 디지털 이미지 서비스도 단계적으로 공개됩니다.</p>
+        <p class="story-source">월간미술</p>
+      </article>
+  </section>
+
+  <footer>
+    DAWN WIRE는 매일 08:00 KST에 자동으로 업데이트됩니다.<br>
+    지난 브리핑은 <a href="./archive/">아카이브</a>에서 볼 수 있습니다.
+  </footer>
+
+</div>
+</body>
+</html>
